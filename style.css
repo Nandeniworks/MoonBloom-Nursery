@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #0f2e25, #1f4b3a);
+    color: white;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav ul li:hover {
+    color: #9be7b1;
+}
+
+.nav-btn {
+    padding: 10px 18px;
+    border: none;
+    background: #2f7a5c;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.hero {
+    position: relative;
+    height: 90vh;
+    background: url('pic5.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.primary-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #3fa37a;
+    color: white;
+    cursor: pointer;
+}
+
+
+.why {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.why h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 50px;
+    font-size: 36px;
+}
+
+.features {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 30px;
+    width: 250px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+.plants {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.plant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.plant-card {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(6px);
+    transition: 0.3s;
+}
+
+.plant-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.plant-card:hover {
+    transform: scale(1.05);
+}
+
+
+.newsletter {
+    padding: 80px 8%;
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+}
+
+.input-group {
+    margin-top: 20px;
+}
+
+.input-group input {
+    padding: 12px;
+    width: 250px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+}
+
+.input-group button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background: #3fa37a;
+    color: white;
+    cursor: pointer;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.4);
+}
